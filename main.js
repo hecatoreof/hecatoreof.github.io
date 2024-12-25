@@ -317,9 +317,9 @@ addEventTitle.addEventListener("input", (e) => {
 // только время
 addEventFrom.addEventListener("input", (e) => {
   addEventFrom.value = addEventFrom.value.replace(/[^0-9:]/g, "");
-  if (addEventFrom.value.length === 2) {
-    addEventFrom.value += ":";
-  }
+  //if (addEventFrom.value.length === 2) {
+  //  addEventFrom.value += ":";
+  //}
   if (addEventFrom.value.length > 5) {
     addEventFrom.value = addEventFrom.value.slice(0, 5);
   }
@@ -327,9 +327,9 @@ addEventFrom.addEventListener("input", (e) => {
 
 addEventTo.addEventListener("input", (e) => {
   addEventTo.value = addEventTo.value.replace(/[^0-9:]/g, "");
-  if (addEventTo.value.length === 2) {
-    addEventTo.value += ":";
-  }
+  //if (addEventTo.value.length === 2) {
+  //  addEventTo.value += ":";
+  //}
   if (addEventTo.value.length > 5) {
     addEventTo.value = addEventTo.value.slice(0, 5);
   }
