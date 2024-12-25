@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='styles.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+  <title>Планнер</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date"></div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>вс</div>
+            <div>пн</div>
+            <div>вт</div>
+            <div>ср</div>
+            <div>чт</div>
+            <div>пт</div>
+            <div>сб</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="мм/гггг" class="date-input" />
+              <button class="goto-btn">вперед</button>
+            </div>
+            <button class="today-btn">вернуться к сегодня</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day"></div>
+          <div class="event-date"></div>
+        </div>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Добавить событие</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Название" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input type="text" placeholder="с" class="event-time-from"/>
+            </div>
+            <div class="add-event-input">
+              <input type="text" placeholder="до" class="event-time-to"/>
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">добавить</button>
+          </div>
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
