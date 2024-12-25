@@ -196,7 +196,7 @@ todayBtn.addEventListener("click", () => {
 });
 
 dateInput.addEventListener("input", (e) => {
-  dateInput.value = dateInput.value.replace(/[^0-9:]/g, "");
+  dateInput.value = dateInput.value.replace(/[^0-9/]/g, "");
   if (dateInput.value.length === 2) {
     dateInput.value += "/";
   }
